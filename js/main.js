@@ -15,6 +15,14 @@ $(window).scroll(function() {
     }
 });
 
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".yoga").text("");
+    } else {
+        $(".yoga").text("Yoga. \xa0\xa0\xa0\xa0\xa0 Where You Are");
+    }
+});
+
 // Page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -31,7 +39,13 @@ $(function(){
     $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
-});    
+}); 
+
+$(function(){
+$( "#bio" ).click(function() {
+  $( this ).hide();
+});
+});
 
 // WOW Animated Scrolling Effects
 
