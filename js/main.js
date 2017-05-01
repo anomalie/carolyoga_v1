@@ -16,10 +16,10 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top > 60) {
         $(".yoga").text("");
     } else {
-        $(".yoga").text("Yoga. \xa0\xa0\xa0\xa0\xa0 Where You Are");
+        $(".yoga").text("Yoga. \xa0\xa0 Where You Are");
     }
 });
 

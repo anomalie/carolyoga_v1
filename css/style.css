@@ -1,9 +1,9 @@
 body {
     width: 100%;
     height: 100%;
-    font-family:'Tahoma';
-    color: #fff;
-    background-color: #000;
+    font-family:'Josefin Sans', sans-serif;
+    color: #000;
+    background-color: #fff;
 
 }
 
@@ -14,7 +14,7 @@ html {
 
 
 @font-face {
-    font-family: 'helvetica';
+    font-family: 'Josefin Sans', sans-serif;
     }
 
 h1,
@@ -24,8 +24,9 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    font-family: 'helvetica';
+    font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 1px;
+    text-align: center;
  
   
 
@@ -33,7 +34,7 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -46,7 +47,7 @@ p {
 }
 
 a {
-    color: white;
+    color: blue;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -58,7 +59,7 @@ a:link {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 
 .light {
@@ -67,10 +68,11 @@ a:focus {
 /*NAV BAR*/
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
     font-weight: bold;
-    font-family: 'helvetica' cursive;
-    background-color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: bold;
+    background-color: rgba(255,255,255, 0.5);
+
 }
 
 .navbar-custom .navbar-brand {
@@ -83,7 +85,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
     color: #fff;
 }
@@ -94,7 +96,8 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #000;
+    background-color: transparent;
 }
 
 .navbar-custom .nav li a {
@@ -124,7 +127,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #000;
 }
 
 @media(min-width:768px) {
@@ -132,7 +135,7 @@ a:focus {
         padding: 30px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background-color: transparent;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -141,7 +144,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #B6B6B4;
+        background-color: transparent;
         opacity: .50; 
     }
 }
@@ -152,7 +155,7 @@ a:focus {
     height: 100%;
     padding: 20px 0;
     text-align: center;
-    color: #fff;
+    color: #000;
     background: url(../img/carol2_new.jpg) no-repeat center scroll;
     background-color: #000;
     background-attachment: fixed;
@@ -162,8 +165,8 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-box-shadow: inset 0 0 300px rgba(0,0,0,.8);
-    box-shadow: inset 0 0 300px rgba(0,0,0,.8);
+  /*  -webkit-box-shadow: inset 0 0 250px rgba(0,0,0,.8);
+    box-shadow: inset 0 0 250px rgba(0,0,0,.8);*/
 
 }
 
@@ -204,46 +207,41 @@ a:focus {
 }
 
 .yoga{
-    color: #fff;
-    padding-top: 20px;
+    color: #ecf0f1;
+    padding-top: 60px;
+    margin-top: auto;
 
 }
 
 
 /*Content*/
 .content-section {
-
-    position: relative;
-    padding-top: 90px;
-    padding-bottom: 100px;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: 0 auto;
-    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #000;
+    background: url(../img/carol2_new.jpg) no-repeat center scroll;
+    background-color: #000;
     background-attachment: fixed;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-box-shadow: inset 0 0 200px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 300px rgba(0,0,0,.5);
-    vertical-align: middle;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-attachment: fixed;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
 }
 
-.content-section:nth-child(4n+2){
-    background-color: #ecf0f1;
+.bgabout{
+    display: table;
+    background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
+    border: 1px black;
     color: white;
-    height:100%;
-    width:100%;
-    color:black;  
-}
-
-.content-section:nth-child(4n+1){
-    background-color: honeydew;
-    background-size: cover;
-    vertical-align: middle;
-    height:100%;
-    width:100%;
-    color:black;    
+    padding: 100px;
 }
 
 
@@ -261,11 +259,21 @@ a:focus {
 
     }
 
+    .bgabout{
+        display: table;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        border: 1px black;
+        color: white;
+        padding: 20px;
+}
+
 }
 
 @media(min-width: @screen-sm-min){
     .content-section{
-        font-size: 16px;
+        font-size: 18px;
+        background-size: cover;
     }
 }
 
@@ -273,7 +281,7 @@ a:focus {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: 'helvetica';
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -343,65 +351,6 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-/*Web*/
-.siteOne{
-   height: 200px;
-   width: 260px;   
-   padding: 10px;
-   margin: 10px;
-   
-}
-
-.siteOne:hover{
-    opacity: .5;
-    transition: .7s ease;
-    cursor: pointer;
-}
-
-.siteTwo{
-   height: 200px;
-   width: 260px; 
-   background-size: cover;
-   padding: 10px;
-   margin: 10px;
-    
-}
-
-.siteTwo:hover{
-    opacity: .5;
-    transition: .7s ease;
-    cursor: pointer;
-}
-
-.siteThree{
-   height: 200px;
-   width: 260px; 
-   background-size: cover;
-   padding: 10px;
-   margin: 10px; 
-}
-
-.siteThree:hover{
-    opacity: .5;
-    transition: .7s ease;
-    cursor: pointer;
-}
-
-.mobileSite{
-    height: 100px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    border: 1px solid black;
-    padding: 18px;
-   
-}
-
-.mobileSite:hover{
-    opacity: .5;
-    transition: .2s ease;
-    cursor: pointer;
-}
 
 
 
@@ -413,22 +362,27 @@ body {
     margin-bottom: auto;
     display: block;
     padding-top: 100px;  
-    padding-bottom: 300px;  
+    padding-bottom: 300px;
+    color: #fff;  
 }
 
 
 
-.table{
+/*.table{
     text-align: left;
     padding: 10px;
     margin: 3px;
+}*/
+
+#bio{
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right:20%;
+    margin: auto;
 }
 
-.bio{
-    color: red;
-    margin: 5px;
-    cursor: pointer;
+.map{
+    color: blue;
 }
-
 
 
